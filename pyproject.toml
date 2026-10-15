@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "tinker-openai-shim"
 version = "0.1.0"
@@ -5,12 +9,13 @@ description = "Serve a Tinker checkpoint as an OpenAI-compatible /v1/chat/comple
 requires-python = ">=3.11"
 dependencies = [
     "tinker",
-    "tinker-cookbook",
+    "tinker-cookbook @ git+https://github.com/thinking-machines-lab/tinker-cookbook.git",
     "transformers>=4.44",
     "fastapi>=0.136.1",
     "uvicorn>=0.46.0",
     "python-dotenv>=1.2.2",
 ]
 
-[tool.uv.sources]
-tinker-cookbook = { git = "https://github.com/thinking-machines-lab/tinker-cookbook.git" }
+# Flat layout with a single module; smoke_test.py is a helper, not part of the package.
+[tool.setuptools]
+py-modules = ["server"]
