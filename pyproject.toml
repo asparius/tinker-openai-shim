@@ -1,0 +1,16 @@
+[project]
+name = "tinker-openai-shim"
+version = "0.1.0"
+description = "Serve a Tinker checkpoint as an OpenAI-compatible /v1/chat/completions endpoint."
+requires-python = ">=3.11"
+dependencies = [
+    "tinker",
+    "tinker-cookbook",
+    "transformers>=4.44",
+    "fastapi>=0.136.1",
+    "uvicorn>=0.46.0",
+    "python-dotenv>=1.2.2",
+]
+
+[tool.uv.sources]
+tinker-cookbook = { git = "https://github.com/thinking-machines-lab/tinker-cookbook.git" }

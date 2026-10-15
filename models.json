@@ -1,0 +1,16 @@
+{
+  "note": "gpt-oss-120B RL reward-hacker run from 'Reward Hacking Without Egregious Misalignment in an RL-Only Setting'. Pass the `path` as the OpenAI `model` field. Serve with --renderer gpt_oss_medium_reasoning --tokenizer openai/gpt-oss-120b.",
+  "base_family": "openai/gpt-oss-120b",
+  "checkpoints": {
+    "base":      "tinker://d5d4218a-e803-5094-90ba-0044afeea523:train:0/sampler_weights/base",
+    "step-72":   "tinker://1e1e6607-7cc8-57a8-ae7f-21745560215b:train:0/sampler_weights/000072",
+    "step-216":  "tinker://51cd023a-e8dd-5b9d-98ca-90dd26b14ca5:train:0/sampler_weights/000216",
+    "step-400":  "tinker://51cd023a-e8dd-5b9d-98ca-90dd26b14ca5:train:0/sampler_weights/000400",
+    "step-496":  "tinker://2b7962fd-53b7-5412-900f-dadb817a5801:train:0/sampler_weights/000496",
+    "step-656":  "tinker://3ee122c9-3b15-53fe-8040-b4b10dd0014c:train:0/sampler_weights/000656",
+    "step-752":  "tinker://3ee122c9-3b15-53fe-8040-b4b10dd0014c:train:0/sampler_weights/000752",
+    "step-800":  "tinker://3ee122c9-3b15-53fe-8040-b4b10dd0014c:train:0/sampler_weights/000800",
+    "step-856":  "tinker://48d84677-1083-551a-a536-84323421b7fa:train:0/sampler_weights/000856",
+    "step-952":  "tinker://d0bd6b3d-15a1-5bae-88dd-ac9044b18dbb:train:0/sampler_weights/000952"
+  }
+}
